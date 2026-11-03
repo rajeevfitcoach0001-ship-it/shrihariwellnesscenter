@@ -1,0 +1,860 @@
+<!DOCTYPE html>
+<html lang="en-IN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!--
+  ============================================================
+  SHRI HARI WELLNESS CENTER — Kurukshetra
+  Single-page website. Contact details are live:
+    Phone / WhatsApp : +91 96909 80001
+    Address          : Brahma Chowk, Amin Road, Kurukshetra, Haryana 136118
+  Still to add when you have it:
+    1. Google Maps embed  -> search "MAP_EMBED" below
+    2. Real centre photos -> replace the hero SVG panel with <img> tags
+    3. Confirmed timings  -> the Opening hours table
+    4. Real reviews only  -> the commented-out testimonials block
+  ============================================================
+-->
+
+<title>Shri Hari Wellness Center, Kurukshetra — Weight, Sugar, PCOD &amp; Thyroid Care</title>
+<meta name="description" content="Shri Hari Wellness Center, Kurukshetra — herbal, medicine-free care for weight management, blood sugar, PCOS/PCOD, thyroid and joint pain. Full body analysis and 1-to-1 coaching.">
+<meta name="theme-color" content="#faf6f0">
+<link rel="canonical" href="https://shrihariwellnesscenter.in/">
+
+<meta property="og:type" content="website">
+<meta property="og:title" content="Shri Hari Wellness Center">
+<meta property="og:description" content="Herbal, medicine-free care for weight, sugar, PCOD, thyroid and joint pain — in Kurukshetra.">
+<meta property="og:url" content="https://shrihariwellnesscenter.in/">
+<meta name="twitter:card" content="summary_large_image">
+
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%232f4a3a'/%3E%3Cpath d='M32 14c8 6 12 12 12 19a12 12 0 0 1-24 0c0-7 4-13 12-19z' fill='%23c9a227'/%3E%3C/svg%3E">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,400;9..144,500;9..144,600&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600&display=swap" rel="stylesheet">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "HealthAndBeautyBusiness",
+  "name": "Shri Hari Wellness Center",
+  "url": "https://shrihariwellnesscenter.in/",
+  "telephone": "+91-96909-80001",
+  "email": "rajeevfitcoach0001@gmail.com",
+  "description": "Herbal, medicine-free care for weight management, blood sugar, PCOS/PCOD, thyroid and joint pain. Full body analysis with report and 1-to-1 coaching.",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Brahma Chowk, Amin Road, opposite the petrol pump",
+    "addressLocality": "Kurukshetra",
+    "addressRegion": "Haryana",
+    "postalCode": "136118",
+    "addressCountry": "IN"
+  }
+}
+</script>
+
+<noscript><style>.reveal{opacity:1 !important;transform:none !important}</style></noscript>
+
+<style>
+  :root{
+    --bg:#faf6f0;
+    --bg-2:#f3ece1;
+    --surface:#fffdf9;
+    --ink:#221f1a;
+    --ink-dim:#6d655a;
+    --line:rgba(34,31,26,0.12);
+    --green:#2f4a3a;
+    --green-soft:#e4ece4;
+    --terracotta:#b4552d;
+    --sage:#7c8f6b;
+    --gold:#c9a227;
+
+    --font-display:"Fraunces",Georgia,"Times New Roman",serif;
+    --font-body:"DM Sans","Segoe UI",sans-serif;
+
+    --wrap:1120px;
+    --r-sm:10px;
+    --r-md:16px;
+    --r-lg:24px;
+    --shadow-sm:0 1px 2px rgba(34,31,26,.05),0 8px 24px -18px rgba(34,31,26,.35);
+    --shadow-md:0 2px 4px rgba(34,31,26,.04),0 24px 48px -32px rgba(34,31,26,.45);
+  }
+
+  @media (prefers-color-scheme: dark){
+    :root{
+      --bg:#15140f;
+      --bg-2:#1b1a14;
+      --surface:#1e1d17;
+      --ink:#f2ece1;
+      --ink-dim:#a49b8c;
+      --line:rgba(242,236,225,0.13);
+      --green:#8fb39a;
+      --green-soft:#22302a;
+      --terracotta:#d9794f;
+      --sage:#9aab88;
+      --gold:#d9b64a;
+      --shadow-sm:0 1px 2px rgba(0,0,0,.4),0 8px 24px -18px rgba(0,0,0,.8);
+      --shadow-md:0 2px 4px rgba(0,0,0,.35),0 24px 48px -32px rgba(0,0,0,.9);
+    }
+  }
+
+  *,*::before,*::after{box-sizing:border-box}
+  html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+  body{
+    margin:0;
+    background:var(--bg);
+    color:var(--ink);
+    font-family:var(--font-body);
+    font-size:17px;
+    line-height:1.65;
+    font-weight:400;
+    -webkit-font-smoothing:antialiased;
+    overflow-x:hidden;
+  }
+  img,svg{max-width:100%;display:block}
+  a{color:inherit;text-decoration:none}
+  h1,h2,h3{font-family:var(--font-display);font-weight:400;line-height:1.12;letter-spacing:-0.015em;margin:0}
+  h1{font-size:clamp(2.4rem,7vw,4.4rem)}
+  h2{font-size:clamp(1.7rem,4.2vw,2.7rem)}
+  h3{font-size:1.18rem;font-weight:500;letter-spacing:-0.005em;line-height:1.3}
+  p{margin:0 0 1em}
+  p:last-child{margin-bottom:0}
+  ul{margin:0;padding:0;list-style:none}
+
+  .wrap{width:100%;max-width:var(--wrap);margin:0 auto;padding:0 22px}
+  .section{padding:clamp(56px,9vw,104px) 0}
+  .section--tint{background:var(--bg-2)}
+  .section--ink{background:var(--green);color:#f6f2e9}
+  .section--ink h2,.section--ink h3{color:#fdfaf3}
+
+  .eyebrow{
+    display:inline-flex;align-items:center;gap:9px;
+    font-family:var(--font-body);
+    font-size:.72rem;font-weight:500;
+    letter-spacing:.16em;text-transform:uppercase;
+    color:var(--terracotta);
+    margin-bottom:18px;
+  }
+  .eyebrow::before{
+    content:"";width:22px;height:1px;background:currentColor;opacity:.7;
+  }
+  .section--ink .eyebrow{color:var(--gold)}
+  .lede{font-size:clamp(1.02rem,1.6vw,1.15rem);color:var(--ink-dim);max-width:60ch}
+  .section--ink .lede{color:rgba(246,242,233,.78)}
+
+  /* ---------- header ---------- */
+  .site-header{
+    position:sticky;top:0;z-index:60;
+    background:color-mix(in srgb,var(--bg) 88%,transparent);
+    backdrop-filter:blur(12px) saturate(140%);
+    border-bottom:1px solid transparent;
+    transition:border-color .3s ease,background .3s ease;
+  }
+  .site-header.is-stuck{border-bottom-color:var(--line)}
+  .header-inner{
+    display:flex;align-items:center;justify-content:space-between;gap:16px;
+    min-height:68px;
+  }
+  .brand{display:flex;align-items:center;gap:11px;min-width:0}
+  .brand__mark{
+    width:34px;height:34px;flex:none;border-radius:9px;
+    background:var(--green);
+    display:grid;place-items:center;
+  }
+  .brand__mark svg{width:19px;height:19px}
+  .brand__text{display:flex;flex-direction:column;line-height:1.15;min-width:0}
+  .brand__name{
+    font-family:var(--font-display);font-size:1.02rem;font-weight:500;letter-spacing:-.01em;
+    white-space:nowrap;overflow:hidden;text-overflow:ellipsis;
+  }
+  .brand__sub{
+    font-size:.62rem;letter-spacing:.15em;text-transform:uppercase;color:var(--ink-dim);
+  }
+
+  .nav{display:none}
+  .nav ul{display:flex;gap:26px;align-items:center}
+  .nav a{
+    font-size:.9rem;color:var(--ink-dim);
+    padding:6px 0;position:relative;
+    transition:color .2s ease;
+  }
+  .nav a::after{
+    content:"";position:absolute;left:0;right:100%;bottom:0;height:1px;
+    background:var(--terracotta);transition:right .25s ease;
+  }
+  .nav a:hover{color:var(--ink)}
+  .nav a:hover::after{right:0}
+
+  .header-actions{display:flex;align-items:center;gap:10px}
+  .btn{
+    display:inline-flex;align-items:center;justify-content:center;gap:9px;
+    font-family:var(--font-body);font-size:.92rem;font-weight:500;
+    padding:12px 20px;border-radius:999px;border:1px solid transparent;
+    cursor:pointer;transition:transform .18s ease,background .2s ease,color .2s ease,border-color .2s ease;
+    white-space:nowrap;
+  }
+  .btn:active{transform:translateY(1px)}
+  .btn--primary{background:var(--green);color:#fdfaf3}
+  .btn--primary:hover{background:#25402f}
+  .btn--ghost{border-color:var(--line);color:var(--ink);background:transparent}
+  .btn--ghost:hover{border-color:var(--ink);background:color-mix(in srgb,var(--ink) 4%,transparent)}
+  .btn--gold{background:var(--gold);color:#241f0a}
+  .btn--gold:hover{background:#d8b23a}
+  .btn--light{background:#fdfaf3;color:#2f4a3a}
+  .btn--light:hover{background:#fff}
+  .btn--sm{padding:9px 15px;font-size:.85rem}
+
+  .menu-toggle{
+    display:grid;place-items:center;width:42px;height:42px;
+    border:1px solid var(--line);border-radius:11px;background:transparent;
+    color:var(--ink);cursor:pointer;padding:0;
+  }
+  .menu-toggle span{display:block;width:17px;height:1.5px;background:currentColor;border-radius:2px;transition:transform .25s ease,opacity .2s ease}
+  .menu-toggle span+span{margin-top:4px}
+  .menu-toggle[aria-expanded="true"] span:nth-child(1){transform:translateY(5.5px) rotate(45deg)}
+  .menu-toggle[aria-expanded="true"] span:nth-child(2){opacity:0}
+  .menu-toggle[aria-expanded="true"] span:nth-child(3){transform:translateY(-5.5px) rotate(-45deg)}
+
+  .mobile-nav{
+    display:none;
+    border-top:1px solid var(--line);
+    background:var(--bg);
+  }
+  .mobile-nav.is-open{display:block}
+  .mobile-nav ul{padding:10px 0 18px}
+  .mobile-nav a{
+    display:block;padding:12px 2px;font-size:1rem;
+    border-bottom:1px solid var(--line);color:var(--ink);
+  }
+  .mobile-nav li:last-child a{border-bottom:0}
+  .mobile-nav .btn{width:100%;margin-top:14px}
+
+  /* ---------- hero ---------- */
+  .hero{
+    position:relative;
+    padding:clamp(44px,8vw,86px) 0 clamp(52px,8vw,90px);
+    overflow:hidden;
+  }
+  .hero::before{
+    content:"";position:absolute;inset:0;pointer-events:none;
+    background:
+      radial-gradient(680px 420px at 82% 6%,color-mix(in srgb,var(--sage) 26%,transparent),transparent 72%),
+      radial-gradient(520px 380px at 6% 96%,color-mix(in srgb,var(--terracotta) 13%,transparent),transparent 70%);
+    opacity:.85;
+  }
+  .hero__grid{
+    position:relative;
+    display:grid;gap:clamp(34px,5vw,60px);
+    align-items:center;
+  }
+  .hero h1{margin-bottom:20px}
+  .hero h1 em{
+    font-style:italic;
+    color:var(--terracotta);
+  }
+  .hero__cta{display:flex;flex-wrap:wrap;gap:12px;margin-top:30px}
+  .hero__note{
+    margin-top:22px;font-size:.86rem;color:var(--ink-dim);
+    display:flex;align-items:center;gap:8px;
+  }
+  .dot{width:7px;height:7px;border-radius:50%;background:var(--sage);flex:none}
+
+  .hero__art{
+    position:relative;
+    aspect-ratio:4/5;
+    max-width:420px;
+    margin-inline:auto;
+    width:100%;
+    border-radius:var(--r-lg);
+    background:
+      linear-gradient(160deg,color-mix(in srgb,var(--sage) 42%,var(--bg-2)),var(--bg-2) 62%);
+    border:1px solid var(--line);
+    overflow:hidden;
+    box-shadow:var(--shadow-md);
+  }
+  .hero__art > svg{position:absolute;inset:0;width:100%;height:100%}
+  .hero__badge{
+    position:absolute;left:16px;bottom:16px;right:16px;
+    background:color-mix(in srgb,var(--surface) 92%,transparent);
+    backdrop-filter:blur(8px);
+    border:1px solid var(--line);
+    border-radius:var(--r-md);
+    padding:14px 16px;
+    display:flex;align-items:center;gap:12px;
+  }
+  .hero__badge strong{display:block;font-family:var(--font-display);font-size:1rem;font-weight:500}
+  .hero__badge small{color:var(--ink-dim);font-size:.78rem;letter-spacing:.02em}
+
+  /* ---------- trust strip ---------- */
+  .trust{border-top:1px solid var(--line);border-bottom:1px solid var(--line);background:var(--surface)}
+  .trust ul{
+    display:grid;grid-template-columns:repeat(2,1fr);
+    gap:1px;background:var(--line);
+  }
+  .trust li{
+    background:var(--surface);
+    padding:20px 18px;
+    display:flex;align-items:center;gap:10px;
+    font-size:.88rem;color:var(--ink-dim);
+  }
+  .trust svg{width:18px;height:18px;flex:none;color:var(--terracotta)}
+
+  /* ---------- about ---------- */
+  .split{display:grid;gap:clamp(30px,5vw,64px)}
+  .about__facts{
+    display:grid;gap:1px;background:var(--line);
+    border:1px solid var(--line);border-radius:var(--r-md);overflow:hidden;
+  }
+  .about__facts div{background:var(--surface);padding:20px 22px}
+  .about__facts dt{font-family:var(--font-display);font-size:1.7rem;color:var(--green);line-height:1.1}
+  .about__facts dd{margin:4px 0 0;font-size:.85rem;color:var(--ink-dim)}
+
+  /* ---------- services ---------- */
+  .cards{
+    display:grid;gap:16px;
+    grid-template-columns:1fr;
+    margin-top:clamp(30px,5vw,48px);
+  }
+  .card{
+    background:var(--surface);
+    border:1px solid var(--line);
+    border-radius:var(--r-md);
+    padding:26px 24px;
+    box-shadow:var(--shadow-sm);
+    transition:transform .25s ease,box-shadow .25s ease,border-color .25s ease;
+  }
+  .card:hover{transform:translateY(-3px);box-shadow:var(--shadow-md);border-color:color-mix(in srgb,var(--sage) 55%,var(--line))}
+  .card__icon{
+    width:42px;height:42px;border-radius:12px;
+    display:grid;place-items:center;margin-bottom:16px;
+    background:var(--green-soft);color:var(--green);
+  }
+  .card__icon svg{width:21px;height:21px}
+  .card p{font-size:.92rem;color:var(--ink-dim);margin:8px 0 0}
+  .card__meta{
+    margin-top:16px;padding-top:14px;border-top:1px solid var(--line);
+    font-size:.76rem;letter-spacing:.09em;text-transform:uppercase;color:var(--ink-dim);
+  }
+
+  /* ---------- process ---------- */
+  .steps{
+    display:grid;gap:1px;background:rgba(246,242,233,.16);
+    border-radius:var(--r-md);overflow:hidden;margin-top:clamp(28px,5vw,44px);
+  }
+  .step{background:var(--green);padding:26px 24px;position:relative}
+  .step__num{
+    font-family:var(--font-display);font-size:.95rem;
+    color:var(--gold);letter-spacing:.06em;margin-bottom:10px;display:block;
+  }
+  .step h3{margin-bottom:8px}
+  .step p{font-size:.92rem;color:rgba(246,242,233,.76);margin:0}
+
+  /* ---------- visit / hours ---------- */
+  .visit{display:grid;gap:clamp(26px,4vw,44px)}
+  .visit__card{
+    background:var(--surface);border:1px solid var(--line);
+    border-radius:var(--r-md);padding:clamp(22px,3vw,30px);
+    box-shadow:var(--shadow-sm);
+  }
+  .visit__card h3{margin-bottom:14px}
+  .kv{display:grid;gap:14px;margin-top:6px}
+  .kv div{display:flex;gap:12px;align-items:flex-start}
+  .kv svg{width:18px;height:18px;flex:none;margin-top:3px;color:var(--terracotta)}
+  .kv strong{display:block;font-size:.74rem;letter-spacing:.12em;text-transform:uppercase;color:var(--ink-dim);font-weight:500;margin-bottom:3px}
+  .kv span{font-size:.96rem;overflow-wrap:break-word}
+
+  table.hours{width:100%;border-collapse:collapse;font-size:.92rem}
+  table.hours th,table.hours td{text-align:left;padding:9px 0;border-bottom:1px solid var(--line)}
+  table.hours th{font-weight:400;color:var(--ink-dim);width:48%}
+  table.hours td{text-align:right;font-variant-numeric:tabular-nums}
+  table.hours tr:last-child th,table.hours tr:last-child td{border-bottom:0}
+
+  .map{
+    border-radius:var(--r-md);overflow:hidden;border:1px solid var(--line);
+    background:var(--bg-2);min-height:260px;position:relative;
+    display:grid;place-items:center;text-align:center;padding:26px;
+  }
+  .map p{font-size:.86rem;color:var(--ink-dim);max-width:34ch;margin:0}
+  .map iframe{width:100%;height:320px;border:0;display:block}
+
+  /* ---------- cta band ---------- */
+  .cta-band{text-align:center}
+  .cta-band h2{max-width:22ch;margin:0 auto 16px}
+  .cta-band .lede{margin:0 auto 30px}
+  .cta-band .hero__cta{justify-content:center;margin-top:0}
+
+  /* ---------- footer ---------- */
+  .site-footer{background:var(--bg-2);border-top:1px solid var(--line);padding:44px 0 34px}
+  .footer-grid{display:grid;gap:26px}
+  .site-footer .brand__name{font-size:1.05rem}
+  .footer-links{display:flex;flex-wrap:wrap;gap:8px 20px;font-size:.9rem;color:var(--ink-dim)}
+  .footer-links a:hover{color:var(--ink)}
+  .footer-bottom{
+    margin-top:32px;padding-top:20px;border-top:1px solid var(--line);
+    display:flex;flex-wrap:wrap;gap:8px;justify-content:space-between;
+    font-size:.78rem;color:var(--ink-dim);
+  }
+
+  /* ---------- floating whatsapp ---------- */
+  .fab{
+    position:fixed;right:16px;bottom:16px;z-index:70;
+    display:inline-flex;align-items:center;gap:9px;
+    padding:13px 18px;border-radius:999px;
+    background:#1f7a4d;color:#fff;font-size:.9rem;font-weight:500;
+    box-shadow:0 10px 30px -12px rgba(0,0,0,.5);
+    transition:transform .2s ease,background .2s ease;
+  }
+  .fab:hover{background:#186a41;transform:translateY(-2px)}
+  .fab svg{width:19px;height:19px}
+
+  /* ---------- reveal ---------- */
+  .reveal{opacity:0;transform:translateY(18px)}
+  .reveal.is-in{opacity:1;transform:none;transition:opacity .7s ease,transform .7s cubic-bezier(.2,.7,.2,1)}
+  @media (prefers-reduced-motion:reduce){
+    html{scroll-behavior:auto}
+    .reveal{opacity:1;transform:none}
+    .card:hover{transform:none}
+    *{transition-duration:.01ms !important;animation-duration:.01ms !important}
+  }
+
+  /* ---------- responsive ---------- */
+  @media (min-width:640px){
+    .cards{grid-template-columns:repeat(2,1fr)}
+    .trust ul{grid-template-columns:repeat(4,1fr)}
+    .steps{grid-template-columns:repeat(3,1fr)}
+    .about__facts{grid-template-columns:repeat(3,1fr)}
+  }
+  @media (min-width:900px){
+    .nav{display:block}
+    .menu-toggle{display:none}
+    .hero__grid{grid-template-columns:1.15fr .85fr}
+    .split{grid-template-columns:1.1fr .9fr;align-items:start}
+    .visit{grid-template-columns:1fr 1fr}
+    .cards{grid-template-columns:repeat(3,1fr)}
+    .footer-grid{grid-template-columns:1.2fr .8fr;align-items:start}
+    .header-actions .btn--ghost{display:inline-flex}
+  }
+  @media (max-width:899px){
+    .header-actions .btn--ghost{display:none}
+  }
+  @media (max-width:540px){
+    .header-actions .btn--primary{display:none}
+    .header-inner{min-height:62px}
+    .brand__name{font-size:.96rem}
+  }
+  @media (max-width:400px){
+    .brand__sub{display:none}
+    .fab span{display:none}
+    .fab{padding:14px;border-radius:50%}
+  }
+</style>
+</head>
+<body>
+
+<header class="site-header" id="top">
+  <div class="wrap header-inner">
+    <a class="brand" href="#top" aria-label="Shri Hari Wellness Center home">
+      <span class="brand__mark" aria-hidden="true">
+        <svg viewBox="0 0 24 24" fill="none"><path d="M12 3c4 3.2 6 6.2 6 9a6 6 0 1 1-12 0c0-2.8 2-5.8 6-9Z" fill="#c9a227"/><path d="M12 8v9" stroke="#2f4a3a" stroke-width="1.4" stroke-linecap="round"/></svg>
+      </span>
+      <span class="brand__text">
+        <span class="brand__name">Shri Hari Wellness Center</span>
+        <span class="brand__sub">Herbal Nutrition &middot; Kurukshetra</span>
+      </span>
+    </a>
+
+    <nav class="nav" aria-label="Primary">
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Treatments</a></li>
+        <li><a href="#process">How it works</a></li>
+        <li><a href="#visit">Visit</a></li>
+      </ul>
+    </nav>
+
+    <div class="header-actions">
+      <a class="btn btn--ghost btn--sm" href="tel:+919690980001">Call</a>
+      <a class="btn btn--primary btn--sm" href="https://wa.me/919690980001?text=Hello%2C%20I%27d%20like%20to%20book%20a%20consultation." target="_blank" rel="noopener">Book on WhatsApp</a>
+      <button class="menu-toggle" id="menuToggle" aria-expanded="false" aria-controls="mobileNav" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+
+  <div class="mobile-nav" id="mobileNav">
+    <div class="wrap">
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Treatments</a></li>
+        <li><a href="#process">How it works</a></li>
+        <li><a href="#visit">Visit us</a></li>
+        <li><a class="btn btn--primary" href="https://wa.me/919690980001?text=Hello%2C%20I%27d%20like%20to%20book%20a%20consultation." target="_blank" rel="noopener">Book on WhatsApp</a></li>
+      </ul>
+    </div>
+  </div>
+</header>
+
+<main>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="wrap hero__grid">
+      <div>
+        <span class="eyebrow">Shri Hari Wellness Center</span>
+        <h1>Lose the weight. Fix the sugar. <em>Without medicine.</em></h1>
+        <p class="lede">At Shri Hari Wellness Center, Kurukshetra, we work on weight, blood sugar, PCOS and thyroid the herbal way — full body analysis, a plan built for your kitchen, and a coach who actually follows up with you.</p>
+
+        <div class="hero__cta">
+          <a class="btn btn--primary" href="https://wa.me/919690980001?text=Hello%2C%20I%27d%20like%20to%20book%20a%20consultation." target="_blank" rel="noopener">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm5.2 14.1c-.2.6-1.2 1.2-1.7 1.2-.5.1-1 .1-1.7-.1-.4-.1-1-.3-1.7-.6a12 12 0 0 1-4.6-4.1c-.5-.7-.8-1.4-.9-1.9-.1-.6.1-1.1.4-1.5l.6-.7c.2-.2.4-.2.6-.2h.5c.2 0 .3.1.5.4l.7 1.6c.1.2 0 .4-.1.5l-.4.5c-.1.2-.2.3 0 .6.2.3.7 1.1 1.4 1.7.9.8 1.5 1 1.8 1.1.2.1.4 0 .5-.1l.6-.7c.2-.2.3-.2.5-.1l1.5.7c.2.1.4.2.4.3.1.2.1.5-.1 1Z"/></svg>
+            Book a consultation
+          </a>
+          <a class="btn btn--ghost" href="tel:+919690980001">+91 96909 80001</a>
+        </div>
+
+        <p class="hero__note"><span class="dot" aria-hidden="true"></span> Kurukshetra, Haryana &middot; First visit includes a complimentary breakfast</p>
+      </div>
+
+      <div class="hero__art reveal" aria-hidden="true">
+        <svg viewBox="0 0 400 500" preserveAspectRatio="xMidYMid slice">
+          <defs>
+            <linearGradient id="g1" x1="0" y1="0" x2="0.9" y2="1">
+              <stop offset="0" stop-color="#1f3628"/>
+              <stop offset="0.55" stop-color="#2f4a3a"/>
+              <stop offset="1" stop-color="#43614a"/>
+            </linearGradient>
+            <linearGradient id="g2" x1="0" y1="1" x2="1" y2="0">
+              <stop offset="0" stop-color="#b4552d" stop-opacity=".30"/>
+              <stop offset="1" stop-color="#c9a227" stop-opacity=".16"/>
+            </linearGradient>
+          </defs>
+          <rect width="400" height="500" fill="url(#g1)"/>
+          <circle cx="300" cy="96" r="86" fill="#c9a227" opacity=".28"/>
+          <circle cx="96" cy="404" r="120" fill="#b4552d" opacity=".22"/>
+          <path d="M200 120c46 34 70 66 70 98a70 70 0 1 1-140 0c0-32 24-64 70-98Z" fill="none" stroke="#f6f2e9" stroke-opacity=".55" stroke-width="1.6"/>
+          <path d="M200 168v150" stroke="#f6f2e9" stroke-opacity=".5" stroke-width="1.4"/>
+          <path d="M200 214c-20-4-32-18-34-36 20 2 32 14 34 36Zm0 0c20-4 32-18 34-36-20 2-32 14-34 36Z" fill="none" stroke="#f6f2e9" stroke-opacity=".42" stroke-width="1.2"/>
+          <path d="M200 262c-20-4-32-18-34-36 20 2 32 14 34 36Zm0 0c20-4 32-18 34-36-20 2-32 14-34 36Z" fill="none" stroke="#f6f2e9" stroke-opacity=".3" stroke-width="1.2"/>
+          <rect width="400" height="500" fill="url(#g2)" opacity=".55"/>
+        </svg>
+        <div class="hero__badge">
+          <svg width="26" height="26" viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="12" cy="12" r="9" stroke="#2f4a3a" stroke-width="1.3"/><path d="M12 7.5v5l3 2" stroke="#b4552d" stroke-width="1.4" stroke-linecap="round"/></svg>
+          <div>
+            <strong>Full body analysis</strong>
+            <small>Your report, explained line by line</small>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TRUST STRIP -->
+  <div class="trust">
+    <div class="wrap">
+      <ul>
+        <li>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M12 3 4 6.5v5.2c0 4.6 3.3 8.1 8 9.3 4.7-1.2 8-4.7 8-9.3V6.5L12 3Z"/><path d="m9 12 2.2 2.2L15.5 10"/></svg>
+          100% herbal approach
+        </li>
+        <li>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M12 20s-7-4.4-7-9a4 4 0 0 1 7-2.6A4 4 0 0 1 19 11c0 4.6-7 9-7 9Z"/></svg>
+          Medicine-free plans
+        </li>
+        <li>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><circle cx="12" cy="12" r="8.5"/><path d="M12 7.5V12l3 2"/></svg>
+          Full body analysis
+        </li>
+        <li>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M4 12h4l2-5 3 10 2-5h5"/></svg>
+          Yoga &amp; Zumba classes
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- ABOUT -->
+  <section class="section" id="about">
+    <div class="wrap split">
+      <div class="reveal">
+        <span class="eyebrow">About us</span>
+        <h2>A small centre in Kurukshetra, built on follow-through.</h2>
+        <div style="margin-top:22px">
+          <p>Shri Hari Wellness Center started from a simple frustration: most people who want to lose weight or get their sugar under control are handed a diet chart and left to manage alone. It rarely lasts more than a few weeks.</p>
+          <p>So we do it the other way round. You sit with us, we run a full body analysis, and we go through the report together. Then you get a plan built around your kitchen, your work hours and your family — plus a coach who checks in on you, rather than a chart you never hear about again.</p>
+          <p>Everything we use is herbal and nutrition-based. No medicine, no injections, no starving yourself. And if your case needs a doctor — sugar that is badly out of range, a thyroid that needs medication — we will say so plainly instead of selling you a package.</p>
+        </div>
+      </div>
+
+      <dl class="about__facts reveal">
+        <div>
+          <dt>1-to-1</dt>
+          <dd>Every client gets a personal coach, not a group chart.</dd>
+        </div>
+        <div>
+          <dt>Report</dt>
+          <dd>Full body analysis, explained before you start anything.</dd>
+        </div>
+        <div>
+          <dt>Herbal</dt>
+          <dd>Nutrition-based plans. No medicine, no injections.</dd>
+        </div>
+      </dl>
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section class="section section--tint" id="services">
+    <div class="wrap">
+      <div class="reveal">
+        <span class="eyebrow">Treatments</span>
+        <h2>What we help with</h2>
+        <p class="lede" style="margin-top:16px">One place for the health problems most people are quietly managing alone. Everything is herbal, and everything starts with your own report.</p>
+      </div>
+
+            <div class="cards">        <article class="card reveal">
+          <div class="card__icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 21c4-2.5 6-6 6-10a6 6 0 1 0-12 0c0 4 2 7.5 6 10Z"/><path d="M12 8v7"/></svg>
+          </div>
+          <h3>Weight management</h3>
+          <p>Weight loss or healthy weight gain — worked on through food and habit, not by skipping meals.</p>
+          <div class="card__meta">1-to-1 plan</div>
+        </article>
+        <article class="card reveal">
+          <div class="card__icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 3c3.5 4 5.5 7 5.5 9.5a5.5 5.5 0 1 1-11 0C6.5 10 8.5 7 12 3Z"/></svg>
+          </div>
+          <h3>Sugar management</h3>
+          <p>Support for keeping blood sugar steady: meal timing, portions and the right kind of carbohydrates.</p>
+          <div class="card__meta">1-to-1 plan</div>
+        </article>
+        <article class="card reveal">
+          <div class="card__icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="2.6"/><path d="M12 9.4c0-3 1.2-5.4 3.4-6.4 1 2.6.2 5.2-1.8 7M12 14.6c0 3-1.2 5.4-3.4 6.4-1-2.6-.2-5.2 1.8-7M9.4 12c-3 0-5.4-1.2-6.4-3.4 2.6-1 5.2-.2 7 1.8M14.6 12c3 0 5.4 1.2 6.4 3.4-2.6 1-5.2.2-7-1.8"/></svg>
+          </div>
+          <h3>PCOS / PCOD</h3>
+          <p>Practical nutrition and lifestyle guidance for irregular cycles, stubborn weight and the fatigue that comes with it.</p>
+          <div class="card__meta">1-to-1 plan</div>
+        </article>
+        <article class="card reveal">
+          <div class="card__icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 3v18M5 7h14"/><path d="M5 7 2 14a3.2 3.2 0 0 0 6 0L5 7Zm14 0-3 7a3.2 3.2 0 0 0 6 0l-3-7Z"/></svg>
+          </div>
+          <h3>Thyroid support</h3>
+          <p>Care that works alongside your doctor — diet, movement and follow-up for an under- or over-active thyroid.</p>
+          <div class="card__meta">Alongside treatment</div>
+        </article>
+        <article class="card reveal">
+          <div class="card__icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M7 17a2.5 2.5 0 1 1-2.2-3.9L14 3.9A2.5 2.5 0 1 1 17.9 7L8.8 16.1A2.5 2.5 0 0 1 7 17Z"/><path d="M6 18a2.5 2.5 0 1 1 3.9 2.2"/></svg>
+          </div>
+          <h3>Joint pain relief</h3>
+          <p>For stiffness and aching knees and backs: an anti-inflammatory approach, gentle movement and weight off the joints.</p>
+          <div class="card__meta">Assessment first</div>
+        </article>
+        <article class="card reveal">
+          <div class="card__icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 14c0-4.4 3.6-8 8-8s8 3.6 8 8"/><path d="M3 18h18"/><path d="M9 10c1-1.4 2-1.4 3 0s2 1.4 3 0"/></svg>
+          </div>
+          <h3>Stress management</h3>
+          <p>Breathing, sleep routine and food habits that settle a body running on too much coffee and too little rest.</p>
+          <div class="card__meta">Guidance</div>
+        </article>
+        <article class="card reveal">
+          <div class="card__icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="5" r="2.2"/><path d="M12 8v6M6 11h12M8 21l4-7 4 7"/></svg>
+          </div>
+          <h3>Yoga, meditation &amp; Zumba</h3>
+          <p>Online and offline classes — for people who want movement to be part of the plan, not an afterthought.</p>
+          <div class="card__meta">Online &amp; offline</div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROCESS -->
+  <section class="section section--ink" id="process">
+    <div class="wrap">
+      <div class="reveal">
+        <span class="eyebrow">How it works</span>
+        <h2>Three steps, no pressure.</h2>
+      </div>
+      <div class="steps">
+        <div class="step reveal">
+          <span class="step__num">01</span>
+          <h3>Come in for a day</h3>
+          <p>Call or WhatsApp to fix a time. Your first visit includes a complimentary healthy breakfast, on us.</p>
+        </div>
+        <div class="step reveal">
+          <span class="step__num">02</span>
+          <h3>Full body analysis</h3>
+          <p>We go through your report together in a 1-to-1 consultation, so you know exactly where you stand.</p>
+        </div>
+        <div class="step reveal">
+          <span class="step__num">03</span>
+          <h3>Stay on it</h3>
+          <p>A herbal nutrition plan and regular follow-ups. Yoga, meditation or Zumba if you want movement in the mix.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- VISIT -->
+  <section class="section" id="visit">
+    <div class="wrap">
+      <div class="reveal" style="margin-bottom:clamp(26px,4vw,40px)">
+        <span class="eyebrow">Visit us</span>
+        <h2>Where to find us</h2>
+      </div>
+
+      <div class="visit">
+        <div class="visit__card reveal">
+          <h3>Shri Hari Wellness Center</h3>
+          <div class="kv">
+            <div>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M12 21s7-6.1 7-11a7 7 0 1 0-14 0c0 4.9 7 11 7 11Z"/><circle cx="12" cy="10" r="2.6"/></svg>
+              <span><strong>Address</strong>Brahma Chowk, Amin Road<br>Opposite the petrol pump<br>Kurukshetra, Haryana – 136118</span>
+            </div>
+            <div>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M6.5 3.5 9 8 7.2 9.8a12 12 0 0 0 7 7L16 15l4.5 2.5-1 3A2 2 0 0 1 17.4 22C10 21.3 2.7 14 2 6.6a2 2 0 0 1 1.5-2l3-1.1Z"/></svg>
+              <span><strong>Phone / WhatsApp</strong><a href="tel:+919690980001">+91 96909 80001</a></span>
+            </div>
+            <div>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2.5"/><path d="m3.6 6.4 8.4 6 8.4-6"/></svg>
+              <span><strong>Email</strong><a href="mailto:rajeevfitcoach0001@gmail.com">rajeevfitcoach0001@gmail.com</a></span>
+            </div>
+          </div>
+
+          <div style="margin-top:22px;padding-top:18px;border-top:1px solid var(--line)">
+            <h3 style="font-size:1rem;margin-bottom:10px">Opening hours</h3>
+            <table class="hours">
+              <tbody>
+                <tr><th scope="row">All days</th><td>Call to confirm timings</td></tr>
+                <tr><th scope="row">Consultation</th><td>By appointment</td></tr>
+                <tr><th scope="row">First visit</th><td>Complimentary breakfast</td></tr>
+                <tr><th scope="row">Classes</th><td>Yoga &middot; Zumba, online &amp; offline</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <!-- MAP_EMBED: replace this whole .map block with your Google Maps iframe -->
+        <div class="map reveal">
+          <div>
+            <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#b4552d" stroke-width="1.4" style="margin:0 auto 12px" aria-hidden="true"><path d="M12 21s7-6.1 7-11a7 7 0 1 0-14 0c0 4.9 7 11 7 11Z"/><circle cx="12" cy="10" r="2.6"/></svg>
+            <p>Map goes here. In Google Maps, find your centre, tap Share &rarr; Embed a map, and paste the code in place of this box.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="section section--tint cta-band">
+    <div class="wrap">
+      <div class="reveal">
+        <span class="eyebrow" style="justify-content:center">Start here</span>
+        <h2>Come for one day. The first breakfast is on us.</h2>
+        <p class="lede" style="text-align:center">A full body analysis with your report, a 1-to-1 consultation and a healthy breakfast trial — at no charge for your first visit. Then decide.</p>
+        <div class="hero__cta">
+          <a class="btn btn--primary" href="https://wa.me/919690980001?text=Hello%2C%20I%27d%20like%20to%20book%20a%20consultation." target="_blank" rel="noopener">Message on WhatsApp</a>
+          <a class="btn btn--ghost" href="tel:+919690980001">Call +91 96909 80001</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!--
+    TESTIMONIALS — add only real reviews. Uncomment and fill in.
+    <section class="section" id="reviews"> ... </section>
+  -->
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div>
+        <a class="brand" href="#top" style="margin-bottom:14px">
+          <span class="brand__mark" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none"><path d="M12 3c4 3.2 6 6.2 6 9a6 6 0 1 1-12 0c0-2.8 2-5.8 6-9Z" fill="#c9a227"/><path d="M12 8v9" stroke="#2f4a3a" stroke-width="1.4" stroke-linecap="round"/></svg>
+          </span>
+          <span class="brand__text"><span class="brand__name">Shri Hari Wellness Center</span></span>
+        </a>
+        <p style="font-size:.88rem;color:var(--ink-dim);max-width:38ch">Herbal nutrition, weight and lifestyle care in Kurukshetra, Haryana.</p>
+      </div>
+      <div>
+        <div class="footer-links">
+          <a href="#about">About</a>
+          <a href="#services">Treatments</a>
+          <a href="#process">How it works</a>
+          <a href="#visit">Visit</a>
+          <a href="https://wa.me/919690980001" target="_blank" rel="noopener">WhatsApp</a>
+          <a href="tel:+919690980001">Call</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; <span id="year">2026</span> Shri Hari Wellness Center. All rights reserved.</span>
+      <span>shrihariwellnesscenter.in</span>
+    </div>
+  </div>
+</footer>
+
+<a class="fab" href="https://wa.me/919690980001?text=Hello%2C%20I%27d%20like%20to%20book%20a%20consultation." target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
+  <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm5.2 14.1c-.2.6-1.2 1.2-1.7 1.2-.5.1-1 .1-1.7-.1-.4-.1-1-.3-1.7-.6a12 12 0 0 1-4.6-4.1c-.5-.7-.8-1.4-.9-1.9-.1-.6.1-1.1.4-1.5l.6-.7c.2-.2.4-.2.6-.2h.5c.2 0 .3.1.5.4l.7 1.6c.1.2 0 .4-.1.5l-.4.5c-.1.2-.2.3 0 .6.2.3.7 1.1 1.4 1.7.9.8 1.5 1 1.8 1.1.2.1.4 0 .5-.1l.6-.7c.2-.2.3-.2.5-.1l1.5.7c.2.1.4.2.4.3.1.2.1.5-.1 1Z"/></svg>
+  <span>WhatsApp</span>
+</a>
+
+<script>
+  (function(){
+    // sticky header border
+    var header = document.querySelector('.site-header');
+    var onScroll = function(){
+      header.classList.toggle('is-stuck', window.scrollY > 8);
+    };
+    window.addEventListener('scroll', onScroll, {passive:true});
+    onScroll();
+
+    // mobile menu
+    var toggle = document.getElementById('menuToggle');
+    var mobileNav = document.getElementById('mobileNav');
+    toggle.addEventListener('click', function(){
+      var open = mobileNav.classList.toggle('is-open');
+      toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+      toggle.setAttribute('aria-label', open ? 'Close menu' : 'Open menu');
+    });
+    mobileNav.querySelectorAll('a').forEach(function(a){
+      a.addEventListener('click', function(){
+        mobileNav.classList.remove('is-open');
+        toggle.setAttribute('aria-expanded','false');
+      });
+    });
+
+    // year
+    var y = document.getElementById('year');
+    if (y) y.textContent = new Date().getFullYear();
+
+    // reveal on scroll
+    var items = document.querySelectorAll('.reveal');
+    if ('IntersectionObserver' in window && !window.matchMedia('(prefers-reduced-motion: reduce)').matches){
+      var io = new IntersectionObserver(function(entries){
+        entries.forEach(function(e){
+          if (e.isIntersecting){
+            e.target.classList.add('is-in');
+            io.unobserve(e.target);
+          }
+        });
+      }, {rootMargin:'0px 0px -8% 0px', threshold:0.08});
+      items.forEach(function(el, i){
+        el.style.transitionDelay = (Math.min(i % 6, 5) * 55) + 'ms';
+        io.observe(el);
+      });
+    } else {
+      items.forEach(function(el){ el.classList.add('is-in'); });
+    }
+  })();
+</script>
+</body>
+</html>
